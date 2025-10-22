@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+<<<<<<< HEAD
          // Membuat tabel 'buku'
          Schema::create('buku', function (Blueprint $table) {
             $table->id();                    // Kolom id (primary key, auto increment)
@@ -18,6 +19,14 @@ return new class extends Migration
             $table->string('pengarang');     // Kolom pengarang
             $table->string('penerbit');      // Kolom penerbit
             $table->timestamps();            // Kolom created_at & updated_at otomatis
+=======
+        Schema::create('buku', function (Blueprint $table) {
+            $table->id();
+            $table->string('judul');
+            $table->string('pengarang');
+            $table->string('penerbit');
+            $table->timestamps();
+>>>>>>> origin/main
         });
     }
 
@@ -26,7 +35,10 @@ return new class extends Migration
      */
     public function down(): void
     {
+<<<<<<< HEAD
         // Jika rollback, maka tabel 'buku' dihapus
+=======
+>>>>>>> origin/main
         Schema::dropIfExists('buku');
     }
 };

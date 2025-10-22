@@ -1,4 +1,5 @@
 @extends('app')
+<<<<<<< HEAD
  
 @section('content')
 <div>
@@ -12,5 +13,9 @@
             </div>
         @endif
     </div>
+=======
+
+@section('content')
+>>>>>>> origin/main
     <h1>Welcome to Home page</h1>
 @endsection
